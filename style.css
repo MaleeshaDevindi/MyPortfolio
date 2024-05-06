@@ -195,3 +195,13 @@
 .contactUs{
     padding-bottom: 100px;
 }
+
+.bottom{
+    background-color: rgb(21, 20, 20);
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+}
