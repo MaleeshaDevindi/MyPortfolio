@@ -1,0 +1,197 @@
+.nav{
+    background-color: rgb(21, 20, 20);
+    font-size: 20px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-item .nav-link{
+    color: rgb(255, 0, 123);
+    font-weight: 500;
+}
+
+.nav-item .nav-link:hover{
+    color: rgb(247, 171, 215);
+}
+
+.home{
+    background-color: rgb(35, 35, 35);
+    display: flex;
+}
+
+.home img{
+    width: 350px;
+    height: 356px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+} 
+
+.home .image{
+    background-color: rgb(255, 0, 123);
+    border-radius: 50%;
+    width: 360px;
+    height: 366px;
+    margin: 100px;
+}
+
+.home-details, .about-details{
+    color: white;
+    margin: 150px;
+}
+
+.home-details h1{
+    font-size: 60px;
+}
+
+.home-details h2{
+    color: rgb(255, 0, 123)
+}
+
+.home-details h1 .lastword{
+    color: rgb(255, 0, 123);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-details .country{
+    font-size: 45px;
+}
+
+.home-details .button button,
+.category-details .button button{
+    background-color: rgb(255, 0, 123);
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.home-details .button button:hover,
+.category-details .button button:hover{
+    background-color: rgb(247, 171, 215);
+    color: rgb(35, 35, 35);
+}
+
+.about{
+    background-color: rgb(44, 41, 41);
+    display: flex;
+}
+
+.about img{
+    width: 350px;
+    height: 356px;
+    margin-left: 0px;
+    margin-top: 5px;
+    border-radius: 50%;
+    padding: 25px;
+} 
+
+.about-details h2 .lastword, 
+.services-details h2 .lastword,
+.projects h2 .lastword,
+.contactUs-details .lastword{
+    color: rgb(255, 0, 123);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-details h2,
+.contactUs-details h2{
+    font-size: 50px;
+}
+
+.about-details h3{
+    color: rgb(255, 0, 123);    
+}
+
+
+.about-details p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.about .image{
+    background-color: transparent;
+    border-width: 10px 10px 0px 0px;  
+    border-style: solid;
+    border-color: rgb(255, 0, 123);
+    width: 400px;
+    height: 380px;
+    margin: 100px;
+    border-radius: 50%;
+    margin-left: 120px;
+    margin-top: 150px;
+}
+
+.services, 
+.contactUs{
+    background-color: rgb(35, 35, 35);
+    color: #ffffff;
+}
+
+.services h2,
+.projects h2,
+.contactUs-details h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+}
+
+.services .sections .container{
+    display: flex;
+    padding-bottom: 100px;
+    justify-items: center;
+}
+
+.card-style{
+    text-decoration: none;
+    margin:auto;
+}
+
+.projects{
+    background-color: rgb(44, 41, 41);
+    color: #ffffff;
+    padding-bottom: 100px;
+}
+
+.projects h3{
+    color: rgb(255, 0, 123);
+    font-size: 30px;
+}
+
+.category-details{
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.category-details p{
+    width: 70%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.category-details .button button{
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.projects .container .row{
+    display: flex;
+    margin: auto;
+}
+
+.projects .container .row .card{
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.contactUs{
+    padding-bottom: 100px;
+}
