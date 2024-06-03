@@ -173,8 +173,7 @@
     font-size: 30px;
 }
 
-.projects .container .row,
-.certificates .container .row{
+.projects .container .row{
     display: flex;
     margin: auto;
 }
@@ -184,21 +183,12 @@
     margin-bottom: 25px;
 }
 
-.certificates .container hr{
-    border: 2px solid #ffffff;
-    width: 80%;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: 10%;
-}
 
 .certificates .container{
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
-.certificates .container .row{
-    display: flex;
-}
+
 
 .contactUs{
     background-color: rgb(44, 41, 41);
@@ -215,3 +205,6 @@
     text-align: center;
     color: #ffffff;
 }
+
+
+
