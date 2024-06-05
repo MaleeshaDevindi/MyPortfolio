@@ -18,6 +18,9 @@ function sendEmails() {
     emailjs.send("service_qf6tspo", "template_xt0sne8", params)
         .then(function(response) {
             alert("Email Sent!!");
+            document.getElementById("name").value="";
+            document.getElementById("email").value="";
+            document.getElementById("message").value="";
         }, function(error) {
             alert("Failed to send email. Please try again.");
         });
