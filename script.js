@@ -1,12 +1,26 @@
-//const { name } = require("tar/lib/types");
+function sendEmails() {
 
-function sendEmails(){
-    let parms = {
-        name : document.getElementById("name").value,
-        email : document.getElementById("email").value,
-        message : document.getElementById("message").value,
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
 
+    if (name === "" || email === "" || message === "") {
+        alert("Please fill out all fields.");
+        return false; 
     }
 
-    emailjs.send("service_qf6tspo","template_xt0sne8",parms).then(alert("Email Sent!!!"));
+    let params = {
+        name: name,
+        email: email,
+        message: message
+    };
+
+    emailjs.send("service_qf6tspo", "template_xt0sne8", params)
+        .then(function(response) {
+            alert("Email Sent!!");
+        }, function(error) {
+            alert("Failed to send email. Please try again.");
+        });
+
+    return false; 
 }
