@@ -1,119 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Add the title icon -->
   <link rel="icon" href="icon\favicon.ico" type="x-image">
+  <!-- link the css file -->
   <link rel="stylesheet" href="style.css" type="text/css">
+  <!-- Link the bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Link the js file -->
   <script type="text/javascript" src="script.js"></script>
+  <!-- set the title -->
   <title>Maleesha Devindi - Portfolio</title>
+  <!-- link the emailJs -->
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "oUXR1neDwSBX74aCl",
-      });
-   })();
-</script>
-<script type="text/javascript" src="script.js"></script>
+  </script>
+  <!-- Add the js Part for the EmailJs -->
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "oUXR1neDwSBX74aCl",
+        });
+    })();
+  </script>
+<!-- Add the loading Icon js -->
+<script type="text/javascript" src="loading.js"></script>
 </head>
+
+
 <body>
-  <ul class="nav justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Services</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Contact</a>
-    </li>
-  </ul>
-    <div class="home">
-      <div class="image">
-          <img src="images/Maleesha.jpg" alt="My Profile Picture">
-      </div>
-        <div class="home-details">
-          <h3>Hello, It's</h3>
-          <h1>Maleesha <font class="lastword">Devindi</font></h1>
-          <h2>Web Developer</h2>
-          <h3 class="country">From Sri Lanka</h3>
-          <a href="document/Maleesha Devindi CV-Kelaniya University.pdf" download="Maleesha Devindi CV-Kelaniya University.pdf">
-            <div class="button">
-              <button>Download CV</button>
-            </div>
-        </a>
+
+  <!-- Begining of the Nav Bar -->
+  <nav class="navbar navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><h2>Maleesha Devindi</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h3 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Maleesha Devindi</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-   </div>
-
-   <!-- about Section -->
-   <div class="about">
-    <div class="about-details">
-      <h2>About <font class="lastword">Me</font></h2>
-      <h3>Web Developer</h3>
-      <p>Hello, I'm an accomplished professional specializing in web development, software engineering, and mobile application development. With a rich background in creating dynamic and user-centric websites, developing robust software solutions, and crafting innovative mobile applications, I bring a strategic and detail-oriented approach to every project. My commitment to staying abreast of industry trends and delivering high-quality results defines my professional ethos. Welcome all, where technological proficiency meets a passion for innovation and excellence.</p>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <hr>
+              <a class="nav-link active" aria-current="page" href="#home"><h5>Home</h5></a>
+              <hr>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><h5>About</h5></a>
+              <hr>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services"><h5>Services</h5></a>
+              <hr>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"><h5>Projects</h5></a>
+              <hr>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><h5>Contact</h5></a>
+              <hr>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="image">
-      <img src="images/Maleesha.jpg" alt="My Profile Picture">
+  </nav>
+  <!-- end of the nav bar -->
+
+  <!-- begining of the home section -->
+<div class="home" id="home">
+    <div class="container text-center">
+      <div class="row g-4">
+        <div class="image col-md-4">
+          <img src="images/Maleesha.jpg" alt="My Profile Picture">
+        </div>
+        <div class="col-md-5 offset-md-3">
+          <div class="home-details">
+            <h3>Hello, It's</h3>
+            <h1>Maleesha <font class="lastword">Devindi</font></h1>
+            <h2>Web Developer</h2>
+            <h3 class="country">From Sri Lanka</h3>
+            <a href="document/Maleesha Devindi CV-Kelaniya University.pdf" download="Maleesha Devindi CV-Kelaniya University.pdf">
+              <!-- CV download part -->
+              <div class="button">
+                <button>Download CV</button>
+              </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+   <!-- end of the home section -->
+
+
+   <!--begining of the about Section -->
+   <div class="about" id="about">
+    <!-- details section -->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="about-details text-center">
+            <h2>About <font class="lastword">Me</font></h2>
+            <h3>Web Developer</h3>
+            <p class="p-2">Hello, I'm an accomplished professional specializing in web development, software engineering, and mobile application development. With a rich background in creating dynamic and user-centric websites, developing robust software solutions, and crafting innovative mobile applications, I bring a strategic and detail-oriented approach to every project. My commitment to staying abreast of industry trends and delivering high-quality results defines my professional ethos. Welcome all, where technological proficiency meets a passion for innovation and excellence.</p>
+          </div>
+        </div>
+        <div class="about-image col-md-4 offset-md-1">
+          <div class="image">
+            <img src="images/Maleesha.jpg" alt="My Profile Picture">
+          </div>
+        </div>
+      </div>
     </div>
    </div>
+   <!-- end of the about section -->
 
-   <!-- Services section -->
-   <div class="services">
+
+   <!-- begining of the Services section -->
+   <div class="services" id="services">
     <div class="services-details">
       <h2>Our <font class="lastword">Services</font></h2>
     </div>
     <div class="sections">
+      <!-- use the bootstrap card -->
       <div class="container">
-        <a class="card-style" href="#">
-          <div class="card" style="width: 22rem;">
-            <img src="images/software-development.jpg" class="card-img-top" alt="software-development-picture">
-            <div class="card-body">
-              <h5>Web Application Development</h5>
-              <hr>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/software-development.jpg" class="card-img-top" alt="bunch of codes on the screen">
+              <div class="card-body">
+                <h5 class="card-title">Web Application Development</h5>
+                <hr>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
             </div>
           </div>
-        </a>
-        <a class="card-style" href="#">
-          <div class="card" style="width: 22rem;">
-            <img src="images/mobile-application-development.jpg" class="card-img-top" alt="mobile-application-development">
-            <div class="card-body">
-              <h5>Mobile Application Development</h5>
-              <hr>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/mobile-application-development.jpg" class="card-img-top" alt="mobile application images">
+              <div class="card-body">
+                <h5 class="card-title">Mobile Application Development</h5>
+                <hr>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
             </div>
           </div>
-        </a>
-        <a class="card-style" href="#">
-        <div class="card" style="width: 22rem;">
-          <img src="images/web-application-development.jpg" class="card-img-top" alt="web-application-development">
-          <div class="card-body">
-            <h5>Desktop Application Development</h5>
-            <hr>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/web-application-development.jpg" class="card-img-top" alt="a desktop computer">
+              <div class="card-body">
+                <h5 class="card-title">Desktop Application Development</h5>
+                <hr>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </a>
-      </div>
+        <!-- end of the bootstrap cards -->
     </div>
    </div>
-   <div class="projects">
+   </div>
+<!-- End of the services section -->
+
+
+<!-- begining of the project section -->
+   <div class="projects" id="projects">
     <div class="container">
     <h2>My <font class="lastword">Projects</font></h2>
+
+    <!-- projects - category1 - basic web development -->
     <h4>HTML - CSS - JS - BOOTSTRAP</h4>
     <hr>
-    <div class="row">
+    <div class="row row-cols-md-4">
     <div class="card" style="width: 18rem;">
       <a href="https://maleeshadevindi.github.io/js-2d-game1/" target="_blank">
       <img src="images/projects/js2D-game1.jpg" class="card-img-top" alt="js game image"></a>
@@ -123,7 +192,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem;">
       <a href="https://maleeshadevindi.github.io/standard-Calculator/" target="_blank">
         <img src="images/projects/standard-Calculator.jpg" class="card-img-top" alt="js game image"></a>
       <div class="card-body">
@@ -152,6 +221,8 @@
     </div>
     </div>
 
+
+    <!-- projects - category2 - Front end development -->
     <h4>REACT JS</h4>
     <hr>
     <div class="row">
@@ -193,6 +264,8 @@
     </div>
     </div>
 
+
+    <!-- projects - category3 - php -->
     <h4>PHP - MY SQL</h4>
     <hr>
     <div class="row">
@@ -231,6 +304,8 @@
       </div>
       </div>
 
+
+  <!-- projects - category4 - python -->
     <h4>PYTHON - DJANGO</h4>
     <hr>
     <div class="row">
@@ -269,14 +344,15 @@
       </div>
       </div>
 
+      <!-- projects - category5 - java -->
       <h4>JAVA - SPRINGBOOT</h4>
       <hr>
       <div class="row">
         <div class="card" style="width: 18rem;">
-          <a href="#" target="_blank">
-            <img src="images/projects/comingProjects.jpg" class="card-img-top" alt="clothing store image"></a>
+          <a href="https://drive.google.com/file/d/1o9nrZogkiAcBo6vrUqKf2iEX5WU4dbEc/view?usp=sharing" target="_blank">
+            <img src="images/projects/word-counterL.jpg" class="card-img-top" alt="clothing store image"></a>
           <div class="card-body">
-            <h5 class="card-text">Next Project</h5>
+            <h5 class="card-text">Word Counter</h5>
             <p class="card-text">Java</p>
           </div>
         </div>
@@ -306,6 +382,7 @@
         </div>
       </div>
 
+      <!-- projects - category6 - wordpress -->
       <h4>WORDPRESS</h4>
       <hr>
       <div class="row">
@@ -343,15 +420,18 @@
         </div>
       </div>
       </div>
-
    </div>
    </div>
+   <!-- end pf the projects section -->
 
-   <div class="certificates">
+
+   <!-- begining of the certificate section -->
+   <div class="certificates" id="certificates">
     <div class="certificate-details">
       <h2>My <font class="lastword">Achievements</font></h2>
     </div>
     <div class="container">
+      <!-- Add the bootstrap slider -->
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -376,10 +456,13 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <!-- end of the bootstrap section -->
     </div>
 </div>
+<!-- end of the certificate section -->
 
-<div class="contactUs">
+<!-- begining of the contact us secton -->
+<div class="contactUs" id="contact">
   <div class="contactUs-details">
     <h2>Contact <font class="lastword">Us</font></h2>
   </div>
@@ -401,11 +484,14 @@
       </div>
     </div>
  </div>
+ <!-- end of the contact us section -->
 
 
+  <!-- begining of the bottom bar -->
    <div class="bottom justify-content-center">
     <p>© 2024 by Maleesha Devindi</p>
    </div>
+   <!-- end of the bottom bar -->
   
   
 </body>

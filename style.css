@@ -1,35 +1,33 @@
-/* navigation bar */
-.nav{
+.navbar{
     background-color: rgb(21, 20, 20);
-    font-size: 20px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
 
-.nav-item .nav-link{
+.navbar h2{
     color: rgb(255, 0, 123);
-    font-weight: 500;
 }
 
-.nav-item .nav-link:hover{
-    color: rgb(247, 171, 215);
+.navbar button{
+    border: rgb(255, 0, 123);
 }
+
+.navbar h3{
+    color: rgb(255, 0, 123);
+}
+
+/* end of the nav bar */
+
 
 /* Home section */
 .home{
     background-color: rgb(35, 35, 35);
     display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .home img{
     width: 350px;
     height: 356px;
-    margin-left: 10px;
-    margin-top: 10px;
     border-radius: 50%;
 } 
 
@@ -38,12 +36,12 @@
     border-radius: 50%;
     width: 360px;
     height: 366px;
-    margin: 100px;
+    margin-left: 15px;
 }
 
 .home-details, .about-details{
     color: white;
-    margin: 150px;
+    /* margin: 150px; */
 }
 
 .home-details h1{
@@ -78,25 +76,24 @@
 
 .home-details .button button:hover,
 .contactUs .button input[type='submit']:hover{
-    background-color: rgb(247, 171, 215);
+    background-color: rgb(249, 112, 192);
     color: rgb(35, 35, 35);
 }
 
 .about{
     background-color: rgb(44, 41, 41);
     display: flex;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.about img{
+.about .about-image img{
     width: 350px;
     height: 356px;
-    margin-left: 0px;
-    margin-top: 5px;
     border-radius: 50%;
-    padding: 25px;
+    padding: 30px;
 } 
+
 
 .about-details h2 .lastword, 
 .services-details h2 .lastword,
@@ -117,24 +114,29 @@
     text-align: justify;
 }
 
-.about .image{
+.about .about-image .image{
     background-color: transparent;
     border-width: 10px 10px 0px 0px;  
     border-style: solid;
     border-color: rgb(255, 0, 123);
-    width: 400px;
-    height: 380px;
-    margin:100px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    margin-left: 120px;
-    margin-top: 150px;
+    /* margin-left: 100px; */
 }
+
+.about-details h2{
+    font-size: 50px;
+    text-align: center;
+}
+
 
 .services, 
 .certificates{
     background-color: rgb(35, 35, 35);
     color: #ffffff;
 }
+
 
 .services h2,
 .projects h2,
@@ -146,21 +148,12 @@
     padding: 50px;
 }
 
-.about-details h2{
-    font-size: 50px;
-    text-align: center;
-}
-
-.services .sections .container{
+.sections .container{
     display: flex;
     padding-bottom: 100px;
     justify-items: center;
 }
 
-.card-style{
-    text-decoration: none;
-    margin:auto;
-}
 
 .projects{
     background-color: rgb(44, 41, 41);
@@ -206,5 +199,9 @@
     color: #ffffff;
 }
 
+/* ............................................................................................................... */
 
-
+/* @media (max-width:720) {
+    .home 
+}
+ */
