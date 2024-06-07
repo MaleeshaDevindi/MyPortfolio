@@ -41,7 +41,6 @@
 
 .home-details, .about-details{
     color: white;
-    /* margin: 150px; */
 }
 
 .home-details h1{
@@ -166,14 +165,11 @@
     font-size: 30px;
 }
 
-.projects .container .row{
-    display: flex;
-    margin: auto;
-}
 
 .projects .container .row .card{
     margin: auto;
     margin-bottom: 25px;
+ 
 }
 
 
@@ -200,8 +196,3 @@
 }
 
 /* ............................................................................................................... */
-
-/* @media (max-width:720) {
-    .home 
-}
- */
